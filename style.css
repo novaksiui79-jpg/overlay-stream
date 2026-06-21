@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: transparent;
     overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +17,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 25px;
+    padding: 30px;
     background: linear-gradient(135deg, rgba(255, 107, 129, 0.15), rgba(255, 159, 67, 0.15));
     border-radius: 20px;
     backdrop-filter: blur(5px);
@@ -31,14 +32,29 @@ body {
     display: flex;
     gap: 40px;
     align-items: center;
+    margin-bottom: 25px;
 }
 
-/* Style des images pour qu'elles soient nettes et grandes */
+/* Style des images */
 .overlay-img {
-    height: 350px; /* Agrandit les images puisqu'il n'y a plus de texte */
+    height: 250px; /* Ajustez la taille selon vos besoins */
     width: auto;
     object-fit: contain;
-    filter: drop-shadow(0px 15px 25px rgba(0, 0, 0, 0.35));
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+/* Style du texte personnalisé corrigé pour être ultra net */
+.overlay-text {
+    color: #ffffff;
+    font-size: 2.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+    /* Ombre portée nette et contrastée pour éliminer le flou */
+    text-shadow: 2px 2px 0px #ea2027, 4px 4px 10px rgba(0, 0, 0, 0.8);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* --- ANIMATION DE 12 SECONDES --- */
