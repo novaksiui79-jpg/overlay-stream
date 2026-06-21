@@ -43,18 +43,18 @@ body {
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.3));
 }
 
-/* Style du texte personnalisé */
+/* Style du texte personnalisé corrigé pour être ultra net */
 .overlay-text {
     color: #ffffff;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     margin: 0;
-    text-shadow: 0 4px 15px rgba(234, 32, 39, 0.6), 0 0 30px rgba(0,0,0,0.5);
-    background: linear-gradient(45deg, #fff, #ffeaa7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* Ombre portée nette et contrastée pour éliminer le flou */
+    text-shadow: 2px 2px 0px #ea2027, 4px 4px 10px rgba(0, 0, 0, 0.8);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* --- ANIMATION DE 12 SECONDES --- */
